@@ -3,7 +3,9 @@
   "version": "0.1.2",
   "description": "Vimeo plugin for the Videogular player",
   "main": "./dist/vg-vimeo.min.js",
-  "dependencies": {},
+  "dependencies": {
+    "vimeo-jquery-api": "^0.10.3"
+  },
   "devDependencies": {
     "webpack": "^1.12.14"
   },
