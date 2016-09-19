@@ -1,5 +1,7 @@
 'use strict';
 
+require('vimeo-jquery-api');
+
 angular.module('videogular.plugins.vimeo', [])
     .directive('vgVimeo', ['VG_STATES', function (VG_STATES) {
             return {
