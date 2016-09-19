@@ -254,7 +254,7 @@
 
 	        //This kicks things off on window message event
 	        init : function(d){
-	          
+
 	            var vimeoVideo,
 	                vimeoAPIurl,
 	                data;
