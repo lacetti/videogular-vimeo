@@ -30,27 +30,32 @@ angular.module('videogular.plugins.vimeo', [])
                                     set: function (value) {
                                         currentTime = value;
                                         player.vimeo('seekTo', value);
-                                    }
+                                    },
+                                    configurable: true
                                 },
                                 'duration': {
                                     get: function () {
                                         return duration;
-                                    }
+                                    },
+                                    configurable: true
                                 },
                                 'paused': {
                                     get: function () {
                                         return paused;
-                                    }
+                                    },
+                                    configurable: true
                                 },
                                 'videoWidth': {
                                     get: function () {
                                         return videoWidth;
-                                    }
+                                    },
+                                    configurable: true
                                 },
                                 'videoHeight': {
                                     get: function () {
                                         return videoHeight;
-                                    }
+                                    },
+                                    configurable: true
                                 },
                                 'volume': {
                                     get: function () {
@@ -59,7 +64,8 @@ angular.module('videogular.plugins.vimeo', [])
                                     set: function (value) {
                                         volume = value;
                                         player.vimeo('setVolume', value);
-                                    }
+                                    },
+                                    configurable: true
                                 }
                             }
                         );

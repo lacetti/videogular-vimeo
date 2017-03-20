@@ -76,27 +76,32 @@
 	                                    set: function (value) {
 	                                        currentTime = value;
 	                                        player.vimeo('seekTo', value);
-	                                    }
+	                                    },
+	                                    configurable: true
 	                                },
 	                                'duration': {
 	                                    get: function () {
 	                                        return duration;
-	                                    }
+	                                    },
+	                                    configurable: true
 	                                },
 	                                'paused': {
 	                                    get: function () {
 	                                        return paused;
-	                                    }
+	                                    },
+	                                    configurable: true
 	                                },
 	                                'videoWidth': {
 	                                    get: function () {
 	                                        return videoWidth;
-	                                    }
+	                                    },
+	                                    configurable: true
 	                                },
 	                                'videoHeight': {
 	                                    get: function () {
 	                                        return videoHeight;
-	                                    }
+	                                    },
+	                                    configurable: true
 	                                },
 	                                'volume': {
 	                                    get: function () {
@@ -105,7 +110,8 @@
 	                                    set: function (value) {
 	                                        volume = value;
 	                                        player.vimeo('setVolume', value);
-	                                    }
+	                                    },
+	                                    configurable: true
 	                                }
 	                            }
 	                        );
@@ -254,6 +260,8 @@
 
 	        //This kicks things off on window message event
 	        init : function(d){
+	          
+	            console.log(d);
 
 	            var vimeoVideo,
 	                vimeoAPIurl,
